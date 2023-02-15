@@ -2,7 +2,7 @@ import {ethers} from "hardhat";
 
 async function  main(){
 
-    const [admin1, admin2, admin3, admin4] = await ethers.getSigners();
+  const [admin1, admin2, admin3, admin4] = await ethers.getSigners();
  
   const TokenVotingContract =  await ethers.getContractFactory("TokenVoting");
 

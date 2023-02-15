@@ -32,7 +32,9 @@ constructor(string memory _name, string memory _symbol, uint _supply){
     name =_name;
     symbol = _symbol;
     supply = _supply;
+
     TokenBalance[msg.sender] +=supply;
+    
     owner = msg.sender;
 
 

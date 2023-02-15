@@ -11,8 +11,12 @@ const config: HardhatUserConfig = {
     goerli:{
       url:process.env.GOERLI_RPC,
     // @ts-ignore
-      accounts:[process.env.PRIVATEKEY1, process.env.PRIVATEKEY2, process.env.PRIVATEKEY3, process.env.PRIVATEKEY4],
+      accounts:[ process.env.PRIVATEKEY4, process.env.PRIVATEKEY2, process.env.PRIVATEKEY3,  process.env.PRIVATEKEY1],
     }
+  }
+  ,
+  etherscan:{
+    apiKey: process.env.API_KEY,
   }
 };
 
